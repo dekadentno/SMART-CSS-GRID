@@ -1,20 +1,20 @@
-.main {
+.row {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 30px;
     grid-template-columns: repeat(12, 1fr);
     margin: 0 auto;
     width: 100%;
     max-width: 1280px;
 }
 
-.one, .two, .three, .four, .five, .six,
-.seven, .eight, .nine, .ten, .eleven, .twelve {
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
     grid-column-end: span 12;
 }
 
 .nested {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 30px;
     grid-template-columns: repeat(12, 1fr);
 }
 
@@ -25,15 +25,15 @@
 .merge-six-rows { grid-row-end: span 6 }
 
 @media only screen and (min-width: 481px) {
-    .one { grid-column-end: span 1 }
-    .two { grid-column-end: span 2 }
-    .three { grid-column-end: span 3 }
-    .four { grid-column-end: span 4 }
-    .five { grid-column-end: span 5 }
-    .six { grid-column-end: span 6 }
-    .seven { grid-column-end: span 7 }
-    .eight { grid-column-end: span 8 }
-    .nine { grid-column-end: span 9 }
-    .ten { grid-column-end: span 10 }
-    .eleven { grid-column-end: span 11 }
+    .col-1 { grid-column-end: span 1 }
+    .col-2 { grid-column-end: span 2 }
+    .col-3 { grid-column-end: span 3 }
+    .col-4 { grid-column-end: span 4 }
+    .col-5 { grid-column-end: span 5 }
+    .col-6 { grid-column-end: span 6 }
+    .col-7 { grid-column-end: span 7 }
+    .col-8 { grid-column-end: span 8 }
+    .col-9 { grid-column-end: span 9 }
+    .col-10 { grid-column-end: span 10 }
+    .col-11 { grid-column-end: span 11 }
 }
